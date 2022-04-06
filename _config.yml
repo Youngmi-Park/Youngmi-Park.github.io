@@ -16,20 +16,20 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko"
-title                    : "Shryu8902's Blog"
+title                    : "Youngmi's Blog"
 title_separator          : "-"
-name                     : "Seunghyoung Ryu"
+name                     : "Youngmi Park"
 description              : "개인 블로그입니다."
-url                      : "https://shryu8902.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://youngmi-park.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "shryu8902/shryu8902.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "Youngmi-Park/Youngmi-Park.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname            : "shryu8902" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "youngmi" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -70,10 +70,10 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : "MK3oylOVQkI-H6IYb1m79S6CIBE6pmOQZYSb3F9IFK8"
 bing_site_verification   :
 yandex_site_verification :
-naver_site_verification  : "88f4049b5e09dab33c8f4f9e19efeac2d73da493"
+naver_site_verification  : "29dbb0e73ec941d53b9ed379243b6ee795941553"
 
 # Social Sharing
 twitter:
@@ -92,34 +92,34 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
+  provider               : #"google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-120931108-1
-    anonymize_ip         : false # true, false (default)
+    tracking_id          : #UA-120931108-1
+    anonymize_ip         : #false # true, false (default)
 
 
 # Site Author
 author:
-  name             : "류승형"
-  avatar           : "/assets/images/new_bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "한국원자력연구원 지능형컴퓨팅연구실"
-  location         : "세종특별자치시"
-  email            : "shryu8902@naver.com"
-  uri              : "https://scholar.google.co.kr/citations?user=eRyqoEcAAAAJ&hl=en"
+  name             : "박영미"
+  avatar           : "/assets/img/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "숙명여자대학교 지식 및 정보 공학 연구실"
+  location         : "서울특별시"
+  email            : "yommi1121@sookmyung.ac.kr"
+  uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "seunghyoungryu"
+  facebook         :
   foursquare       :
-  github           : "shryu8902"
+  github           : "youngmi-Park"
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        : "seunghyoung_ryu"
+  instagram        : "dudal.pxx"
   lastfm           :
-  linkedin         : "seunghyoung-ryu-775a73a0" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "youngmi-park" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
