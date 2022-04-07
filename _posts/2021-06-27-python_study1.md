@@ -1,7 +1,7 @@
 ---
 title:  "[Python 기초] 파이썬 자료형 - 문자열(String)"
 excerpt: "파이썬의 문자열 자료형에 대해서 알아보자"
-strapline: "파이썬의 문자열 자료형에 대해서 알아보자
+strapline: "파이썬의 문자열 자료형에 대해서 알아보자"
 toc: true
 comments: true
 mathjax: true
