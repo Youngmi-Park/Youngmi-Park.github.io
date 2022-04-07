@@ -1,11 +1,13 @@
 ---
 title:  "[Python 기초] 파이썬 자료형 - 문자열(String)"
-excerpt: "파이썬의 기본이자 핵심단위인 자료형을 알아보자"
+excerpt: "파이썬의 문자열 자료형에 대해서 알아보자"
+strapline: "파이썬의 문자열 자료형에 대해서 알아보자
 toc: true
+comments: true
+mathjax: true
 toc_sticky: true
 header:
-  teaser: /assets/images/python_logo.jpg
-
+  overlay_image: /assets/img/02.jpeg
 categories:
   - data_handling
 tags:
@@ -17,7 +19,6 @@ tags:
   - 자료형
   - type
   - 문자열
-  - 문자형
   - string
   - str
   - 인덱싱
@@ -45,7 +46,7 @@ last_modified_at: 2019-06-27T08:20:00-20:30
 
 # 개요  
 
-![jpg](/assets/images/python_logo.jpg){: .align-center}{: width="70%" height="70%"}  
+<!--![jpg](/assets/images/python_logo.jpg){: .align-center}{: width="70%" height="70%"} -->
 
 파이썬의 기본이자 핵심단위인 자료형에는 숫자형, 문자형, 리스트, 튜플, 딕셔너리가 있다. 숫자형은 일반적으로 알고 있는 부분이 많으므로 문자형(string)에 대해 공부해보자.  
 
