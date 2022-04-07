@@ -38,10 +38,8 @@ tags:
   - lstrip
   - rstrip
   - replace
-  - split
-
-
-last_modified_at: 2019-06-27T08:20:00-20:30
+  - split 
+last_modified_at: 2021-06-27
 ---
 
 # 개요  
