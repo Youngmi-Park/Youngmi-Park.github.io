@@ -9,17 +9,20 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+
+// font size manipulation code
+
 html {
-    font-size: 14px; // originally 16px
-    @include breakpoint($medium) {
-        font-size: 16px; // originally 18px
-    }
+  font-size: 14px; // change to whatever
+  @include breakpoint($medium) {
+    font-size: 16px; // change to whatever
+  }
 
-    @include breakpoint($large) {
-        font-size: 16px; // originally 20px
-    }
+  @include breakpoint($large) {
+    font-size: 16px; // change to whatever
+  }
 
-    @include breakpoint($x-large) {
-        font-size: 16px; // originally 22px
-    }
+  @include breakpoint($x-large) {
+    font-size: 16px; // change to whatever
+  }
 }
