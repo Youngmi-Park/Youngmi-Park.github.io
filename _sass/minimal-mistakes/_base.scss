@@ -13,7 +13,7 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.8;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -76,6 +76,12 @@ ins {
   }
 }
 
+/* devinlife comment: 구글 애드 센스의 아래 바 레이아웃 삭제
+ https://github.com/mmistakes/minimal-mistakes/issues/306 */
+//  ins.adsbygoogle {
+//   border-bottom: none !important;
+// }
+
 del a {
   color: inherit;
 }
@@ -130,17 +136,15 @@ a {
     @extend %tab-focus;
   }
 
-  &:hover,
-  &:active {
-    color: $link-color-hover;
-    outline: 0;
-  }
-
   &:visited {
     color: $link-color-visited;
   }
-}
 
+  &:hover {
+    color: $link-color-hover;
+    outline: 0;
+  }
+}
 /* buttons */
 
 button:focus {
@@ -155,6 +159,7 @@ kbd,
 samp,
 pre {
   font-family: $monospace;
+  font-size: 1.1em;
 }
 
 pre {
@@ -168,8 +173,11 @@ figcaption > code,
 td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  font-size: $type-size-6;
-  background: $code-background-color;
+  font-size: 0.9em;
+  background: #d0d7db;
+  color: #d65683;
+  //background: $code-background-color;
+  //color: ,
   border-radius: $border-radius;
 
   &:before,
