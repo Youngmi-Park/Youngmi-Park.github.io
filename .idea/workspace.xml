@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="877e9885-052e-4d50-a629-8db6504f7c54" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="23KDkMl8lEHDFyj7t2caKSVy4xt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yganalyst.github.io-master" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\s_py9\Git\Youngmi-Park.github.io\_posts" />
+      <recent name="C:\Users\s_py9\Git\Youngmi-Park.github.io\assets\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\s_py9\Git\Youngmi-Park.github.io\img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="877e9885-052e-4d50-a629-8db6504f7c54" name="Default Changelist" comment="" />
+      <created>1641474029515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641474029515</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add files">
+      <created>1641475716547</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641475716547</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add files">
+      <created>1641475816759</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641475816759</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix file">
+      <created>1641476335630</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641476335630</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fix file">
+      <created>1641476507828</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641476507828</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix file">
+      <created>1641477883189</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641477883189</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fix file">
+      <created>1641477952591</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641477952591</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix files">
+      <created>1649253897021</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649253897021</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fix url">
+      <created>1649254103248</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649254103248</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Remove Test files">
+      <created>1649297639636</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649297639636</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add 2021-06-27 python_study1.md">
+      <created>1649297678431</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649297678431</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix 2021-06-27 python_study1.md meta data">
+      <created>1649299965880</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649299965880</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix file location">
+      <created>1649300083583</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1649300083583</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix file">
+      <created>1649300160366</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649300160366</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add image files">
+      <created>1649300199268</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1649300199268</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fix metadata">
+      <created>1649300319289</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649300319289</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fix 2021-06-27-python_study1.md">
+      <created>1649300718096</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1649300718096</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add 2021-05-06-linux1.md">
+      <created>1650040967998</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1650040967998</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fix index.html">
+      <created>1650040985470</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1650040985470</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fix files">
+      <created>1650045024812</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1650045024812</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add files">
+      <created>1650045064673</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1650045064673</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fix archive-single.html">
+      <created>1650045451636</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1650045451636</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fix files">
+      <created>1650045636183</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1650045636183</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fix files">
+      <created>1650046181612</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1650046181612</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fix files">
+      <created>1650046971500</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1650046971500</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fix files">
+      <created>1650047273951</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1650047273951</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fix files">
+      <created>1650047546334</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1650047546334</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Fix files">
+      <created>1650047877410</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1650047877410</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fix files">
+      <created>1650048129006</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1650048129006</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Fix files">
+      <created>1650048308607</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1650048308607</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fix files">
+      <created>1650048459462</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1650048459462</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Fix files">
+      <created>1650048771537</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1650048771537</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Fix files">
+      <created>1650048782366</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1650048782366</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Fix files">
+      <created>1650048901609</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1650048901609</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Fix files">
+      <created>1650048973089</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1650048973089</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Fix files">
+      <created>1650049385331</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1650049385331</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Fix files">
+      <created>1650050059059</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1650050059059</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Fix files">
+      <created>1650050136489</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1650050136489</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Fix files">
+      <created>1650050472769</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1650050472769</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Fix files">
+      <created>1650050938737</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1650050938737</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Fix files`">
+      <created>1650051214142</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1650051214142</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Revert &quot;Fix files&quot;&#10;&#10;This reverts commit a70e2d6d">
+      <created>1650051499186</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1650051499186</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Fix files`">
+      <created>1650051946551</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1650051946551</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Fix files">
+      <created>1650052062764</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1650052062764</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Fix url" />
+    <MESSAGE value="Remove Test files" />
+    <MESSAGE value="Add 2021-06-27 python_study1.md" />
+    <MESSAGE value="Fix 2021-06-27 python_study1.md meta data" />
+    <MESSAGE value="Fix file location" />
+    <MESSAGE value="Fix file" />
+    <MESSAGE value="Add image files" />
+    <MESSAGE value="Fix metadata" />
+    <MESSAGE value="Fix 2021-06-27-python_study1.md" />
+    <MESSAGE value="Add 2021-05-06-linux1.md" />
+    <MESSAGE value="Fix index.html" />
+    <MESSAGE value="Add files" />
+    <MESSAGE value="Fix archive-single.html" />
+    <MESSAGE value="Revert &quot;Fix files&quot;&#10;&#10;This reverts commit a70e2d6d" />
+    <MESSAGE value="Fix files`" />
+    <MESSAGE value="Fix files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix files" />
+  </component>
+</project>
