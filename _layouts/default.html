@@ -15,9 +15,9 @@
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    {% include_cached skip-links.html %}
+    {% include_cached browser-upgrade.html %}
+    {% include_cached masthead.html %}
 
     <div class="initial-content">
       {{ content }}
@@ -27,7 +27,7 @@
     <div align="center" style="margin: 1em 0;">
     <ins class="adsbygoogle"
          style="display:block; border-bottom: initial;"
-         data-ad-client="ca-pub-9089895411733030"
+         data-ad-client=""
          data-ad-format="auto"></ins>
     </div>
     <script>
