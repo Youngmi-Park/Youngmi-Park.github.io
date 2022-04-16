@@ -47,10 +47,10 @@ $type-size-8: 0.625em !default; // ~10px
    ========================================================================== */
 
 $gray: #7a8288 !default;
-$dark-gray: #262624// mix(#000, $gray, 40%) !default;
-$darker-gray: #4f4d4a// mix(#000, $gray, 60%) !default;
-$light-gray: #8e8b82 // mix(#fff, $gray, 50%) !default;
-$lighter-gray: #bfbbb0 // mix(#fff, $gray, 90%) !default;
+$dark-gray: #262624 !default; // mix(#000, $gray, 40%) !default;
+$darker-gray: #4f4d4a !default; // mix(#000, $gray, 60%) !default;
+$light-gray: #8e8b82 !default; // mix(#fff, $gray, 50%) !default;
+$lighter-gray: #bfbbb0 !default; // mix(#fff, $gray, 90%) !default;
 
 $background-color: #fff !default;
 $code-background-color: #fafafa !default;
