@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="877e9885-052e-4d50-a629-8db6504f7c54" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-05-06-linux1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-05-06-linux1.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +54,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641474029515</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Add files">
-      <created>1641475716547</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1641475716547</updated>
     </task>
     <task id="LOCAL-00002" summary="Add files">
       <created>1641475816759</created>
@@ -398,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650084772516</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Add post anaconda1">
+      <created>1650273987654</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1650273987654</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,6 +434,7 @@
     <MESSAGE value="Fix files`" />
     <MESSAGE value="Fix files" />
     <MESSAGE value="change colors" />
-    <option name="LAST_COMMIT_MESSAGE" value="change colors" />
+    <MESSAGE value="Add post anaconda1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add post anaconda1" />
   </component>
 </project>
