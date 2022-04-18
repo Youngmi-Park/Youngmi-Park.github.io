@@ -9,7 +9,7 @@ toc_sticky: true
 header:
   overlay_image: /assets/img/02.jpg
 categories:
-  - python
+  - Python
 tags:
   - python
   - 데이터
