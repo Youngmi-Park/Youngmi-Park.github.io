@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="877e9885-052e-4d50-a629-8db6504f7c54" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2021-05-06-linux1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-05-06-linux1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-06-01-anaconda1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-06-01-anaconda1.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,20 +54,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641474029515</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add files">
-      <created>1641475816759</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1641475816759</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Fix file">
-      <created>1641476335630</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1641476335630</updated>
     </task>
     <task id="LOCAL-00004" summary="Fix file">
       <created>1641476507828</created>
@@ -398,7 +384,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650273987654</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Fix post linux1">
+      <created>1650274130065</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1650274130065</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Fix post anaconda1">
+      <created>1650274197244</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1650274197244</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -435,6 +435,8 @@
     <MESSAGE value="Fix files" />
     <MESSAGE value="change colors" />
     <MESSAGE value="Add post anaconda1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add post anaconda1" />
+    <MESSAGE value="Fix post linux1" />
+    <MESSAGE value="Fix post anaconda1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix post anaconda1" />
   </component>
 </project>
