@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="877e9885-052e-4d50-a629-8db6504f7c54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_posts/2022-04-12-error_resolution1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,13 +55,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641474029515</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Fix file">
-      <created>1641477952591</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1641477952591</updated>
     </task>
     <task id="LOCAL-00007" summary="Fix files">
       <created>1649253897021</created>
@@ -398,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650274364431</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="fix categories">
+      <created>1650381773417</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1650381773418</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
