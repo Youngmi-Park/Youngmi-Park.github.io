@@ -19,22 +19,26 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 sidebar-contents:
-  - title: "Python"
+  - title: "Programming"
     children:
-      - title: "Data handling"
-        url: /categories/#data-handling
-      - title: "Pythonic"
-        url: /categories/#pythonic
-      - title: "etc."
-        url: /categories/#etc
+      - title: "Python"
+        url: /categories/#python
+      - title: "Anaconda"
+        url: /categories/#Anaconda
+      - title: "Error Resolution"
+        url: /categories/#Error-Resolution
   - title: "Algorithm"
     children:
       - title: "Algorithm"
         url: /categories/#Algorithm
       - title: "DataStructure"
         url: /categories/#DataStructure
-      - title: "Machine Learning"
-        url: /categories/#ml
+#  - title: "Machine Learning"
+#    children:
+#      - title: "Algorithm"
+#        url: /categories/#Algorithm
+#      - title: "DataStructure"
+#        url: /categories/#DataStructure
   - title: "DB & System"
     children:
       - title: "SQL"
