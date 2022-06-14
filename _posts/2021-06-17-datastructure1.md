@@ -1,0 +1,88 @@
+---
+title:  "[Anaconda] 아나콘다 기본 명령어"
+excerpt: "아나콘다 가상환경 생성부터 삭제까지"
+strapline: "아나콘다 가상환경 생성부터 삭제까지"
+toc: true
+comments: true
+mathjax: true
+toc_sticky: true
+header:
+  overlay_image: /assets/img/02.jpg
+categories:
+  - Anaconda
+tags:
+  - anaconda
+  - 가상환경
+  - 라이브러리 설치
+  - 명령어
+last_modified_at: 2021-06-01
+---
+
+## 1. 가상환경 만들기
+**my_env 라는 이름의 가상환경 생성**
+```shell
+conda create -n <가상환경이름>
+conda create -n my_env
+```
+
+**가상환경을 만들면서 파이썬 3.7 설치<br>**
+버전을 명시하지 않으면 가장최신 버전이 설치된다.
+
+```shell
+conda create -n my_env python=3.7
+```
+
+**가상환경을 만들면서 패키지도 함께 설치**
+```shell
+conda create -n my_env pandas numpy
+```
+
+## 2. 가상환경 확인하기
+현재 만들어져 있는 가상환경들을 확인할 수 있다.
+
+```shell
+conda info --envs
+```
+
+## 3. 가상환경 활성화/비활성화
+
+conda 가상환경은 생성한 후 바로 활성화되는 것이 아니라 명령어를 통해 가상환경에 진입해야 한다.
+
+```shell
+conda activate <가상환경이름>
+conda activate my_env
+```
+
+활성화된 가상환경을 종료할 때는 아래 명령어를 사용한다.
+
+```shell
+conda deactivate
+```
+## 4. 가상환경 라이브러리 설치하기
+
+**가상환경이 활성화된 상태일 때**
+```shell
+conda install pandas
+```
+
+**가상환경이 비활성화된 상태일 때**
+```shell
+conda install -n <가상환경이름> pandas
+conda install -n my_env pandas
+```
+
+## 5. 가상환경 라이브러리 확인하기
+
+가상환경을 활성화 한 상태에서 설치된 라이브러리를 확인할 수 있다.
+
+```shell
+conda list
+```
+
+## 6. 가상환경 삭제하기
+
+```shell
+conda remove -n <가상환경이름> --all
+conda remove -n my_env --all
+```
+
