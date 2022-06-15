@@ -43,55 +43,68 @@ Deep speech는 소음환경, 잔향, 화자변이에 매우 좋다. 음소(Phone
  
 
 학습 세트에서 단일 발화 $x$와 레이블 $y$를 샘플링한다.<br>
-<img align="center" src="https://user-images.githubusercontent.com/53163222/107055866-12909800-6815-11eb-8114-91c9c95f328b.png">
+$$
+S = {(x^{(1)}, y^{(1)}), (x^{(2)}, y^{(2)}), \cdots}
+$$
 
-<span><img width="28px" src="https://user-images.githubusercontent.com/53163222/107057666-0e657a00-6817-11eb-84b6-69981e8c1c10.png"></span>: 각 발화는 길이 <span><img width="28px" src="https://user-images.githubusercontent.com/53163222/107057983-60a69b00-6817-11eb-9b67-b04732a1655a.png"></span>의 시계열 데이터이다. - (i)는 수많은 데이터셋 중에 i번째 데이터셋
 
-모든 시간 조각은 오디오 기능의 벡터이다. 모델은 MFCC를 사용한다. 입력 *X*와 정답 *Y*가 있다면 *X*는 *t*초마다 *p*번째 주파수의 크기를 나타내는 스펙트로그램[[1\]](#_ftn1) 형태의 데이터이고 아래와 같이 표현할 수 있다. 
+$x^{(i)}$ 각 발화는 길이 $T^{(i)}$의 시계열 데이터이다. - $(i)$는 수많은 데이터셋 중에 $i$번째 데이터셋
 
-<div>
-<img src="https://user-images.githubusercontent.com/53163222/107057055-5df77600-6816-11eb-908f-57cd4b0ef48f.png">
-<img src="https://user-images.githubusercontent.com/53163222/107057072-6059d000-6816-11eb-9d12-fe442f723277.png">
-</div>
+모든 시간 조각은 오디오 기능의 벡터이다. 모델은 MFCC를 사용한다. 입력 $X$와 정답 $Y$가 있다면 $X$는 $t$초마다 $p$번째 주파수의 크기를 나타내는 스펙트로그램[[1\]](#_ftn1) 형태의 데이터이고 아래와 같이 표현할 수 있다. 
 
-RNN의 목표는를 <img src="https://user-images.githubusercontent.com/53163222/107061212-3d7dea80-681b-11eb-94a0-d1da3694bdde.png">이용해 입력 시퀀스 *x*를 전사 *y*에 대한 문자 확률 시퀀스로 변환하는 것이다.
+$$
+x^{(i)}_{t,p}=1,\cdots, T^{(i)}
+$$
+
+RNN의 목표는를 $\hat{y}_t=P(c_t|x)$이용해 입력 시퀀스 $x$를 전사 $y$에 대한 문자 확률 시퀀스로 변환하는 것이다.
 <br><br>
-<img src="https://user-images.githubusercontent.com/53163222/107063242-7d45d180-681d-11eb-8f2d-5a8cb09c42a4.png">
+$$
+c_t \in {a,b,c, \cdots, z, space, apostrophe, blank}
+$$
 <br><br><br>
 이 시스템의 RNN 모델은 총 5개의 은닉 유닛 계층으로 구성되어있다.
 
-*h(0)*: 입력 *X*
-*h(l)*:  계층 *l*의 은닉 유닛
+$h(0)$: 입력 $X$
+$h(l)$:  계층 $l$의 은닉 유닛
 
-이 모델에서 1~3층은 반복되지 않는다. 첫 번째 레이어의 경우, 각 시간 t에서의 출력은 MFCC frame *Xt* 와 context of *C*에 따라 다르다. (모델은 C=9 사용) 나머지 비 순환 계층은 각 시간 단계에 대해 독립적인 데이터에서 작동한다. 따라 처음 3개의 레이어는 다음과 같이 계산된다.
+이 모델에서 1~3층은 반복되지 않는다. 첫 번째 레이어의 경우, 각 시간 t에서의 출력은 MFCC frame $Xt$ 와 context of $C$에 따라 다르다. (모델은 C=9 사용) 나머지 비 순환 계층은 각 시간 단계에 대해 독립적인 데이터에서 작동한다. 따라 처음 3개의 레이어는 다음과 같이 계산된다.
 <br>
 <img src="https://user-images.githubusercontent.com/53163222/107064092-7a97ac00-681e-11eb-98e2-53790ddc6e5c.png">
 <br>
-*MFCC(Mel-Frequency Cepstral Coefficient): 음성/음악 등 오디오 신호 처리 분야에서 널리 쓰이는 특징값(Feature) 중 하나이다. MFCC는 오디오 신호에서 추출할 수 있는 feature로, 소리의 고유한 특징을 나타내는 수치이다. 주로 음성 인식, 화자 인식, 음성 합성, 음악 장르 분류 등 오디오 도메인의 문제를 해결하는 데 사용된다.
+>*MFCC(Mel-Frequency Cepstral Coefficient)
+>음성/음악 등 오디오 신호 처리 분야에서 널리 쓰이는 특징값(Feature) 중 하나이다. MFCC는 오디오 신호에서 추출할 수 있는 feature로, 소리의 고유한 특징을 나타내는 수치이다. 주로 음성 인식, 화자 인식, 음성 합성, 음악 장르 분류 등 오디오 도메인의 문제를 해결하는 데 사용된다.
 
  
 
-여기서 <img src="https://user-images.githubusercontent.com/53163222/111245136-81001b80-8647-11eb-88b8-f6e368dfd37a.png">는 계층 l의 가중치 행렬과 편향 매개 변수이고, 활성화 함수는 clipped ReLu로 0 ~ 20 사이의 값만 사용한다.
+여기서 $W^{(l)}, b^{(l)}$는 계층 l의 가중치 행렬과 편향 매개 변수이고, 활성화 함수는 clipped ReLu로 0 ~ 20 사이의 값만 사용한다.
  
-![image](https://user-images.githubusercontent.com/53163222/111245310-c91f3e00-8647-11eb-8857-be306d0d8270.png)
+$$
+g(z) = min{max{0, z}, 20}
+$$
 
 네 번째 층은 순환 계층이다. 이 계층에는 순방향 반복 은닉 유닛이 포함된다.
 
-![image](https://user-images.githubusercontent.com/53163222/111245339-d3413c80-8647-11eb-899c-c17dc38bed33.png)
+$$
+h_t^{(f)}=g(W^{(4)}h_t^{(3)}+W_r^{(f)}h^{(f)}_{t-1}+b^{(4)})
+$$
 
-<img src="https://user-images.githubusercontent.com/53163222/111245399-ed7b1a80-8647-11eb-9fc1-2c4472a95f5a.png"> 는 i번째 발화에 대해 t=1에서 t=T(i) 까지 순차적으로 계산되어야 한다.
+h^{(f)}는 $i$번째 발화에 대해 $t=1$에서 $t=T(i)$ 까지 순차적으로 계산되어야 한다.
 
  
 
 다섯 번째 비 순환 계층은 순방향 유닛을 입력으로 사용한다.
 
-![image](https://user-images.githubusercontent.com/53163222/111245503-13082400-8648-11eb-9fa3-eedeef8f7412.png) 
+$$
+h^{(5)}=g(W^{(5)}h^{(f)}+b)
+$$
 
 출력 계층은 알파벳의 각 시간 슬라이스 t 와 문자 k 에 대해 예측된 문자 확률에 해당하는 표준 logit이다.
 
-![image](https://user-images.githubusercontent.com/53163222/111245521-1dc2b900-8648-11eb-9726-96ffb04a2ab3.png)
+$$
+h^{(6)}_{t,k}=\hat{t,k}=(W^{(6)}h_t^{(5)}+b_k^{(6)})
+$$
 
-예측 <img src="https://user-images.githubusercontent.com/53163222/111245614-4480ef80-8648-11eb-8de0-45c71375b173.png">을 계산하고 나면 CTC loss<img src="https://user-images.githubusercontent.com/53163222/111245625-477be000-8648-11eb-8c8a-b635cbabdf86.png">를 계산하여 예측의 오류를 측정한다. (CTC 손실은 문자 간의 전환을 나타내기 위해 위의 공백이 필요하다.) 훈련 중에 ground-truth 문자 시퀀스 y가 주어지면 네트워크 출력과 관련하여 기울기 <img src="https://user-images.githubusercontent.com/53163222/111245625-477be000-8648-11eb-8c8a-b635cbabdf86.png">를 평가할 수 있다. 
+예측 $\hat{y}_{t,k}$을 계산하고 나면 CTC loss $L(\hat{y}, y)$를 계산하여 예측의 오류를 측정한다. (CTC 손실은 문자 간의 전환을 나타내기 위해 위의 공백이 필요하다.) 훈련 중에 ground-truth 문자 시퀀스 y가 주어지면 네트워크 출력과 관련하여 기울기 $L(\hat{y}, y)$를 평가할 수 있다. 
 
 이 시점에서 모든 모델 매개 변수에 대한 기울기 계산은 나머지 네트워크를 통한 역전파를 통해 수행될 수 있다. 훈련을 위해 Adam 방법을 사용한다.
 
@@ -103,11 +116,11 @@ RNN의 목표는를 <img src="https://user-images.githubusercontent.com/53163222
 ## Geometric Constants - 네트워크와 관련된 몇 가지 상수
 
 ### 1. n_input
-최대 n_steps 벡터의 각각은 음성 샘플의 시간 분할 영역의 MFCC 특징 벡터이다. 데이터 세트의 샘플 속도에 따라 MFCC 특징의 수를 정한다. 일반적으로 샘플 속도가 8kHz이면 13 가지 특징을 사용하고, 샘플 속도가 16kHz이면 26 개의 특징을 사용한다. n_input에서 벡터의 차원, 즉 MFCC 특징의 수를 캡처한다. n_input은 기본적으로 26이다.
+최대 `n_steps` 벡터의 각각은 음성 샘플의 시간 분할 영역의 MFCC 특징 벡터이다. 데이터 세트의 샘플 속도에 따라 MFCC 특징의 수를 정한다. 일반적으로 샘플 속도가 8kHz이면 13 가지 특징을 사용하고, 샘플 속도가 16kHz이면 26 개의 특징을 사용한다. `n_input`에서 벡터의 차원, 즉 MFCC 특징의 수를 캡처한다. `n_input`은 기본적으로 26이다.
 
 ### 2. n_context
 RNN에서는 time-slice의 MFCC 특징과 함께 해당 프레임 양쪽의 C 프레임 컨텍스트가 제공된다.
-n_context는 기본적으로 9이다.
+`n_context`는 기본적으로 9이다.
 
 <br>
 *일부 비 순환 계층: 각 계층의 유닛 개수만 지정하면 된다.*
@@ -121,15 +134,15 @@ n_context는 기본적으로 9이다.
 입력 차원에 관계없이 “cell state” 차원을 자유롭게 선택할 수 있다.
 
 ### 5. n_hidden_3
-LSTM세 번째 계층의 유닛 수는 다음과 같이 n_cell_dim에 의해 결정된다. 
+LSTM세 번째 계층의 유닛 수는 다음과 같이 `n_cell_dim`에 의해 결정된다. 
 
 ### 6. n_hidden_6
-변수 n_hidden_6는 대상 언어의 문자 수에 1(공백)을 더한다
+변수 `n_hidden_6`는 대상 언어의 문자 수에 1(공백)을 더한다
 
 영어 카디널리티 세트: {a,b,c, ...,z,space,apostrophe,blank}
 
 
-## Parallel Optimization(****병렬 최적화)
+## Parallel Optimization(병렬 최적화)
 
 단일 호스트의 GPU에서 DeepSpeech 모델의 최적화를 구현하는 방법이다. 병렬 최적화는 다양한 형태가 있다. 
 
@@ -141,40 +154,45 @@ LSTM세 번째 계층의 유닛 수는 다음과 같이 n_cell_dim에 의해 결
 
 예를 들어 비동기 병렬 최적화에서는 
 
-1) 처음에 모델을 CPU 메모리에 배치한다. 
+1. 처음에 모델을 CPU 메모리에 배치한다. 
 
-2) 각 ![img](file:///C:/Users/s_py9/AppData/Local/Temp/msohtmlclip1/01/clip_image071.png) GPU는 현재 모델 매개 변수와 함께 데이터의 미니 배치를 얻는다.
+2. 각 GPU는 현재 모델 매개 변수와 함께 데이터의 미니 배치를 얻는다.
 
-3) 이 미니 배치를 사용하여 각 GPU는 모든 모델 매개 변수에 대한 기울기를 계산한다.
+3. 이 미니 배치를 사용하여 각 GPU는 모든 모델 매개 변수에 대한 기울기를 계산한다.
 
-4) GPU가 작업을 완료되면 기울기를 CPU로 다시 보낸다. 
+4. GPU가 작업을 완료되면 기울기를 CPU로 다시 보낸다. 
 
-5) CPU는 GPU로 부터 기울기 세트를 수신할 때마다 모델 매개 변수를 비동기적으로 업데이트한다.
+5. CPU는 GPU로 부터 기울기 세트를 수신할 때마다 모델 매개 변수를 비동기적으로 업데이트한다.
 
  
 
 - 장점
 
-처리량: 어떤 GPU도 유휴 상태로 대기하지 않는다. GPU가 미니 배치 처리를 완료하면 처리할 다음 미니 배치를 즉시 얻을 수 있다. 미니 배치를 완료하기 위해 다른 GPU를 기다릴 필요가 없다. 
+  - 처리량: 어떤 GPU도 유휴 상태로 대기하지 않는다. 
+  - GPU가 미니 배치 처리를 완료하면 처리할 다음 미니 배치를 즉시 얻을 수 있다. 
+  - 미니 배치를 완료하기 위해 다른 GPU를 기다릴 필요가 없다. 
 
 - 단점
-모델 업데이트가 비 동기식이므로 문제가 있을 수 있다.
+
+- 모델 업데이트가 비 동기식이므로 문제가 있을 수 있다.
 
 예를 들어, 
 
-1) CPU에 모델 매개 변수 w 가 있고 미니배치 n 을 GPU 1에 보내고 미니배치 n+1 을 GPU 2에 보낸다.
+1. CPU에 모델 매개 변수 w 가 있고 미니배치 n 을 GPU 1에 보내고 미니배치 n+1 을 GPU 2에 보낸다.
 
 2) 비동기 처리방법이기 때문에 GPU 2가 GPU 1보다 먼저 완료될 수 있고 CPU의 모델 매개 변수를 업데이트 할 수 있다. 결과적으로 새 모델 매개 변수가 생성되는데 식은 아래와 같다.
 
-![image](https://user-images.githubusercontent.com/53163222/111246080-00dab580-8649-11eb-93ec-dea40459dda0.png)
-
+$$
+\delta W_{n+1}(W), W + \delta W_{n+1}(W)
+$$
 
 3) 그 다음 GPU 1은 미니 배치를 완료하고 매개 변수를 다음과 같이 업데이트 한다.
 
-![image](https://user-images.githubusercontent.com/53163222/111246817-48ae0c80-864a-11eb-86e0-41c18827ab8f.png)
-ng)
+$$
+W + \delta W_{n+1}(W), W + \delta W_{n}(W)
+$$
 
-여기서 문제는 <img src="https://user-images.githubusercontent.com/53163222/111246957-90cd2f00-864a-11eb-9882-59dbc11e713e.png">가 <img src="https://user-images.githubusercontent.com/53163222/111247001-a04c7800-864a-11eb-945a-084d960f8577.png">에서 평가된다는 것이다. 따라서 기울기가 잘못된 위치에서 평가되기 때문에 약간 부정확할 수 있다. 이는 모델의 동기 업데이트를 통해 대응할 수 있지만 여전히 문제는 있다.
+여기서 문제는 $\delta W_n(W)$가 W에서 평가된다는 것이다. 따라서 기울기가 잘못된 위치에서 평가되기 때문에 약간 부정확할 수 있다. 이는 모델의 동기 업데이트를 통해 대응할 수 있지만 여전히 문제는 있다.
 
  
 
@@ -189,11 +207,12 @@ ng)
 
 - 장점
 
-잘못된 기울기 업데이트 문제가 없다.
+  - 잘못된 기울기 업데이트 문제가 없다.
 
 - 단점
 
-한 번에 하나의 GPU 만 사용할 수 있다. 따라서 다중 GPU 설정이 있는 경우(G>1), GPU 중 하나를 제외하고 모두 유휴 상태로 유지된다. 
+  - 한 번에 하나의 GPU 만 사용할 수 있다. 
+  - 따라서 다중 GPU 설정이 있는 경우(G>1), GPU 중 하나를 제외하고 모두 유휴 상태로 유지된다. 
 
 ### 3. Hybrid Parallel Optimization 하이브리드 병렬 최적화
 
@@ -214,13 +233,14 @@ ng)
 ![image](https://user-images.githubusercontent.com/53163222/111247120-d12cad00-864a-11eb-85c4-598b62ed5d7d.png)
 
 - 장점
-비동기 병렬 최적화와 마찬가지로 여러 GPU를 병렬로 사용할 수 있다. <br>
-잘못된 기울기 문제가 없다. (실제로 단일 미니 배치로 작업하는 것처럼 수행된다.)
+
+  - 비동기 병렬 최적화와 마찬가지로 여러 GPU를 병렬로 사용할 수 있다.
+  - 잘못된 기울기 문제가 없다. (실제로 단일 미니 배치로 작업하는 것처럼 수행된다.)
 
 - 단점
-하이브리드 병렬 최적화는 완벽하지 않다. <br>
-하나의 GPU가 다른 모든 GPU보다 느리면 이 GPU가 미니 배치를 완료할 때까지 나머지는 유휴 상태에 있어야한다. 이는 처리량을 저하시킬 수 있다.  <br>
- 모든 GPU의 제조사와 모델이 동일하다면 이 문제를 최소화할 수 있다.  <br> <br>
+  - 하이브리드 병렬 최적화는 완벽하지 않다.
+  - 하나의 GPU가 다른 모든 GPU보다 느리면 이 GPU가 미니 배치를 완료할 때까지 나머지는 유휴 상태에 있어야한다. 이는 처리량을 저하시킬 수 있다.
+  - 모든 GPU의 제조사와 모델이 동일하다면 이 문제를 최소화할 수 있다.
 
 상대적으로 하이브리드 병렬 최적화는 더 많은 장점과 적은 단점이 있기 때문에 하이브리드 모델을 사용한다.
 
