@@ -53,19 +53,19 @@ print(min(zero,one))
 
 1. 숫자가 바뀐 횟수를 체크한다.
 
-000011100 = 3
+- 000011100 = 3
 
-0000000 = 1
+- 0000000 = 1
 
-0011001001110 = 7
+- 0011001001110 = 7
 
-1. 횟수를 2로 나눈 몫을 구하고 int로 바꿔서 소수점은 버린다.
+2. 횟수를 2로 나눈 몫을 구하고 int로 바꿔서 소수점은 버린다.
 
-3//2=1.5 → 1
+- 3//2=1.5 → 1
 
-1//2=0.5 → 0
+- 1//2=0.5 → 0
 
-7//2=3.5 → 3
+- 7//2=3.5 → 3
 
 ```python
 n = input()
@@ -79,6 +79,7 @@ for i in n:
 print(change//2)
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/89feba56-031f-4a8a-904f-d4b21c2db069/Untitled.png)
+![image](https://user-images.githubusercontent.com/53163222/174517517-87c1c733-e01b-4fc9-b597-de802c3a4d5a.png)
 
-둘다 for문으로 전체를 확인하는 방법이라 실행시간은 똑같이 나왔다
+
+둘 다 for문으로 전체를 확인하는 방법이라 실행 시간은 똑같이 나왔다
