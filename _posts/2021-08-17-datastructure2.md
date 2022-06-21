@@ -9,13 +9,14 @@ toc_sticky: true
 header:
   overlay_image: /assets/img/02.jpg
 categories:
-  - Anaconda
+  - Data Structure
 tags:
-  - anaconda
-  - 가상환경
-  - 라이브러리 설치
-  - 명령어
-last_modified_at: 2021-06-01
+  - datastructure
+  - stack
+  - queue
+  - deque
+  - 자료구조
+  last_modified_at: 2021-08-17
 ---
 
 # Stack / Queue / Deque 
