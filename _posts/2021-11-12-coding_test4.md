@@ -1,7 +1,7 @@
 ---
-title:  "[Coding Test] 이코데 BFS/DFS "
-excerpt: "이코테 BFS/DFS 예제와 실전문제"
-strapline: "이코테 BFS/DFS 예제와 실전문제"
+title:  "[Coding Test] 이코데 DFS/BFS"
+excerpt: "이코테 DFS/BFS 예제와 실전문제"
+strapline: "이코테 DFS/BFS 예제와 실전문제"
 toc: true
 comments: true
 mathjax: true
