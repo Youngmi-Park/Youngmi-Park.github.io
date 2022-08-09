@@ -9,7 +9,7 @@ toc_sticky: true
 header:
   overlay_image: /assets/img/02.jpg
 categories:
-  - Python
+  - Coding Test
 tags:
   - python
   - 코딩테스트

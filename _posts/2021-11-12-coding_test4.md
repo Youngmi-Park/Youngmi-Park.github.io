@@ -79,7 +79,43 @@ start node: 1
 '8''을 스택에 넣고 방문 처리한다.
 
 이와 같은 과정을 반복했을 때 전체 노드의 탐색 순서(스택에 들어간 순서)는 다음과 같다.
+
 **탐색순서: 1 → 2 → 7 → 6 → 8 → 3 → 4 → 5**
+
+
+```python
+# DFS 메서드 정의
+def dfs(graph, visited, start):
+	visited[start] = True # 방문처리
+	print(start, end = ' ')
+	for i in graph[start]: # 현재 노드와 연결된 다른 노드를 재귀적으로 방문
+		if not visited[i]:
+			dfs(graph, visited, i)
+
+# 각 노드가 연결된 정보를 리스트 자료형으로 표현(2차원 리스트)
+graph = [
+	[],
+	[2, 3, 8],
+	[1, 7],
+	[1, 4, 5],
+	[3, 5],
+	[3, 4],
+	[7],
+	[2, 6, 8],
+	[1, 7]
+]
+
+# 각 노드가 방문된 정보를 리스트 자료형으로 표현(1차원 리스트)
+visited = [False] * 9
+
+# 정의된 DFS 호출
+dfs(graph, visited, 1) # 연결정보, 방분정보, 시작노드
+```
+
+```yaml
+Output: 1 2 7 6 8 3 4 5
+```
+
 
 ## BFS(Breadth First Search) 너비 우선 탐색
 
@@ -117,6 +153,47 @@ start node: 1
 [step 5] 큐에서 노드 '8'을 꺼내 방문하지 않은 인접 노드가 없으면 무시한다.
 
 이와 같은 과정을 반복했을 때 전체 노드의 탐색 순서(큐에 들어간 순서)는 다음과 같다.
+
 **탐색순서: 1 → 2 → 3 → 8 → 7 → 4 → 5 → 6**
 
 **최단거리 문제에서 활용될 수 있다.**
+
+```python
+from collections import deque
+
+# BFS 메서드 정의
+def bfs(graph, visited, start):
+	queue = deque([start]) # 큐 구현
+	visited[start] = True # 현재 노드 방문처리
+	while queue: # 큐가 빌 때까지 반복
+		now = queue.popleft() # 큐에서 가장 먼저들어온 원소 출력
+		print(now, end = ' ')
+		for i in graph[now]: # 해당 원소와 연결된 원소 중 아직 방문하지 않은 원소들을 큐에 삽입
+			if not visited[i]:
+				queue.append(i)
+				visited[i] = True 
+	
+# 각 노드가 연결된 정보를 리스트 자료형으로 표현(2차원 리스트)
+graph = [
+	[],
+	[2, 3, 8],
+	[1, 7],
+	[1, 4, 5],
+	[3, 5],
+	[3, 4],
+	[7],
+	[2, 6, 8],
+	[1, 7]
+]
+
+# 각 노드가 방문된 정보를 리스트 자료형으로 표현(1차원 리스트)
+visited = [False] * 9
+
+# 정의된 bfs 함수 호출
+bfs(graph, visited, 1)
+```
+
+```yaml
+Output: 1 2 3 8 7 4 5 6
+```
+
