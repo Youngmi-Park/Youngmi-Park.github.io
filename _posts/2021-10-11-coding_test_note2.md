@@ -21,8 +21,8 @@ tags:
 last_modified_at: 2021-10-05
 ---
 
-<p>
-<img src="../assests/img/post/coding_test_note/coding_test_note2_1.png"/>
+<p align="center">
+<img  width="50%" src="https://user-images.githubusercontent.com/53163222/190881548-6f62eb86-481e-4de1-a29a-bfc00b4e95b5.png"/>
 </p>
 
 # 2차원 리스트 90도 회전
