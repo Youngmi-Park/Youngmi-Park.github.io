@@ -1,7 +1,7 @@
 ---
 title:  "[Coding Test] 2차원 리스트 90도 회전"
 excerpt: "2차원 리스트를 시계방향으로 90도 회전시키는 방법"
-strapline: "문제에서 입력 받는 다양한 방법 정리"
+strapline: "2차원 리스트를 시계방향으로 90도 회전시키는 방법"
 toc: true
 comments: true
 mathjax: true
@@ -30,7 +30,8 @@ last_modified_at: 2021-10-05
 90도 회전했을 때 행, 열이 변하는 규칙을 정리하면 다음과 같다.
 - 회전한 후 행 번호 = 회전하기 전 열 번호
 - 회전한 후 열 번호 = N - 1 - 회전하기 전 행 번호
- 
+
+#
  
 이러한 규칙을 코드로 나타내면 다음 코드와 같다.
  
@@ -80,10 +81,10 @@ print(list_of_tuples)
 3. tuple로 반환되는 요소를 리스트로 바꾸어준다.
 ```python
 return [list(e) for e in list_of_tuples]
->>> [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+# [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
 ```
 
-===
+***
 
 ## 180도 회전
 ```python
@@ -111,5 +112,7 @@ def rotated(list_2d):
 ```
 
 # 리스트 회전을 이용하는 문제
+
 [2020 KAKAO BLIND RECRUITMENT 자물쇠와 열쇠](https://school.programmers.co.kr/learn/courses/30/lessons/60059)
+
 [백준 18808번 스티커 붙이기](https://www.acmicpc.net/problem/18808)
