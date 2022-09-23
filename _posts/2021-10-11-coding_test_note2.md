@@ -63,30 +63,30 @@ def rotated(array_2d):
 
 1.  배열을 역순으로 바꾼다.
 
-```python
-array_2d = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    ```python
+    array_2d = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-reversed_ = array_2d[::-1]
-print(reversed_)
-# [[7, 8, 9], [4, 5, 6], [1, 2, 3]]
-```
+    reversed_ = array_2d[::-1]
+    print(reversed_)
+    # [[7, 8, 9], [4, 5, 6], [1, 2, 3]]
+    ```
 
 2. 2차원 배열의 인자를 별표(*, Asterisk)로 unpacking하고 zip()으로 묶어준다.
 - unpacking은 괄호 안에 있던 데이터들을 풀어 각각으로 만들어 준다.
 - zip()은 각 인자들을 tuple로 묶어 zip object로 반환한다.
 
-```python
-list_of_tuples = zip(*array_2d[::-1])
-print(list_of_tuples)
-# <zip object at 0x7f16a09c1540>
+    ```python
+    list_of_tuples = zip(*array_2d[::-1])
+    print(list_of_tuples)
+    # <zip object at 0x7f16a09c1540>
 ```
 
 3. tuple로 반환되는 요소를 리스트로 바꾸어준다.
 
-```python
-return [list(e) for e in list_of_tuples]
-# [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
-```
+    ```python
+    return [list(e) for e in list_of_tuples]
+    # [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+    ```
 
 ***
 
@@ -105,7 +105,7 @@ def rotated(list_2d):
 
 ## 270도 회전
 
--90도 회전하는 것과도 같다. 또는 180 + 90도 회전으로 이해할 수 있다.
+90도 회전하는 것과도 같다. 또는 180 + 90도 회전으로 이해할 수 있다.
 
 ```python
 def rotated(list_2d):
