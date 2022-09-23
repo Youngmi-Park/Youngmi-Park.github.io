@@ -1,7 +1,7 @@
 ---
-title:  "[Coding Test] 노트 "
-excerpt: "유용한 표현 정리"
-strapline: "유용한 표현 정리"
+title:  "[Coding Test] 입력 받는 다양한 방법 "
+excerpt: "문제에서 입력 받는 다양한 방법 정리"
+strapline: "문제에서 입력 받는 다양한 방법 정리"
 toc: true
 comments: true
 mathjax: true
